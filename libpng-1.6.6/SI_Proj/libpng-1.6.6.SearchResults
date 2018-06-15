@@ -1,0 +1,23 @@
+---- png_sig_cmp Matches (17 in 11 files) ----
+Example.c (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):   return(!png_sig_cmp(buf, (png_size_t)0, PNG_BYTES_TO_CHECK));
+Libpng-manual.txt (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):png_sig_cmp(), and it will return 0 (false) if the bytes match the
+Libpng-manual.txt (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):    is_png = !png_sig_cmp(header, 0, number);
+Libpng-manual.txt (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):    !png_sig_cmp(sig, 0, num)
+Libpng-manual.txt (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):png_memset_check() functions.  Instead use !png_sig_cmp(), memcpy(),
+Png.c (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):png_sig_cmp(png_const_bytep sig, png_size_t start, png_size_t num_to_check)
+Png.h (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):PNG_EXPORT(3, int, png_sig_cmp, (png_const_bytep sig, png_size_t start,
+Png.h (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):#define png_check_sig(sig, n) !png_sig_cmp((sig), 0, (n))
+Png2pnm.c (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6\contrib\pngminus):  ret = png_sig_cmp (buf, 0, 8);
+PngFile.c (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6\contrib\visupng):    if (png_sig_cmp(pbSig, 0, 8))
+Pngpread.c (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):   if (png_sig_cmp(info_ptr->signature, num_checked, num_to_check))
+Pngpread.c (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):          png_sig_cmp(info_ptr->signature, num_checked, num_to_check - 4))
+Pngrutil.c (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):   if (png_sig_cmp(info_ptr->signature, num_checked, num_to_check))
+Pngrutil.c (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):          png_sig_cmp(info_ptr->signature, num_checked, num_to_check - 4))
+Readpng.c (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6\contrib\gregbook):    if (png_sig_cmp(sig, 0, 8))
+Readpng2.c (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6\contrib\gregbook):    return !png_sig_cmp(sig, 0, num);
+Symbols.def (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6\scripts): png_sig_cmp @3
+---- png_get_rows Matches (4 in 4 files) ----
+Libpng-manual.txt (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):   row_pointers = png_get_rows(png_ptr, info_ptr);
+Png.h (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):PNG_EXPORT(112, png_bytepp, png_get_rows, (png_const_structrp png_ptr,
+Pngget.c (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6):png_get_rows(png_const_structrp png_ptr, png_const_inforp info_ptr)
+Symbols.def (c:\winshare\s5pv210\project\picture\libdecode_for_picture\libpng-1.6.6\scripts): png_get_rows @112
